@@ -19,7 +19,7 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
   @override
   void initState() {
     drawerIndex = DrawerIndex.HOME;
-    screenView = HomeScreen();
+    screenView = const HomeScreen();
     super.initState();
   }
 
@@ -53,22 +53,22 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
       switch (drawerIndex) {
         case DrawerIndex.HOME:
           setState(() {
-            screenView = HomeScreen();
+            screenView = const HomeScreen();
           });
           break;
-        case DrawerIndex.Help:
+        case DrawerIndex.SHARE:
           setState(() {
-            screenView = HomeScreen();
+            screenView = const HomeScreen();
           });
           break;
-        case DrawerIndex.FeedBack:
+        case DrawerIndex.REVIEW:
           setState(() {
-            screenView = HomeScreen();
+            screenView = const HomeScreen();
           });
           break;
-        case DrawerIndex.Invite:
+        case DrawerIndex.ABOUT:
           setState(() {
-            screenView = HomeScreen();
+            screenView = const HomeScreen();
           });
           break;
         default:
