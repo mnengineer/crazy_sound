@@ -44,19 +44,6 @@ class _HumanScreenState extends State<HumanScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: const Text("Human"),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(10),
-            child: Container(
-              width: 36,
-              height: 30,
-              decoration: BoxDecoration(
-                  color: Colors.grey[800],
-                  borderRadius: BorderRadius.circular(10)),
-              child: const Center(child: Text("0")),
-            ),
-          )
-        ],
       ),
       body: Container(
         padding: const EdgeInsets.all(20),
