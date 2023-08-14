@@ -4,13 +4,7 @@ import 'package:strange_sounds/screens/human.dart';
 import 'package:strange_sounds/screens/special.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({Key? key}) : super(key: key);
-
-  final List<String> items = [
-    'animal',
-    'human',
-    'special',
-  ];
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
