@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:strange_sounds/screens/home.dart';
+import 'package:strange_sounds/custom_drawer/navigation_home_screen.dart';
 
 void main() {
   runApp(const App());
@@ -10,8 +10,8 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: HomeScreen(),
+    return const MaterialApp(
+      home: NavigationHomeScreen(),
     );
   }
 }
