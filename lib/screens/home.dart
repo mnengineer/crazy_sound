@@ -19,7 +19,6 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: const Icon(Icons.menu),
         title: const Text("Strange Sounds"),
         actions: [
           Padding(
