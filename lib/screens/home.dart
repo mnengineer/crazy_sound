@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final audioPlayer = AudioPlayer();
+  final _audioPlayer = AudioPlayer();
 
   final List<String> _listItem = [
     'assets/images/baby.jpg',
@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void dispose() {
-    audioPlayer.dispose();
+    _audioPlayer.dispose();
     super.dispose();
   }
 
@@ -146,7 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     primary: Colors.grey[800],
                                   ),
                                   onPressed: () {
-                                    audioPlayer.play(
+                                    _audioPlayer.play(
                                       AssetSource('videos/baby.mp3'),
                                     );
                                   },
