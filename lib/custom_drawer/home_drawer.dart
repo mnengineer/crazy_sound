@@ -29,22 +29,22 @@ class _HomeDrawerState extends State<HomeDrawer> {
   void setDrawerListArray() {
     drawerList = <DrawerList>[
       DrawerList(
-        index: DrawerIndex.HOME,
+        index: DrawerIndex.home,
         labelName: 'ホーム',
         icon: const Icon(Icons.home),
       ),
       DrawerList(
-        index: DrawerIndex.SHARE,
+        index: DrawerIndex.share,
         labelName: 'アプリをシェアする',
         icon: const Icon(Icons.share),
       ),
       DrawerList(
-        index: DrawerIndex.REVIEW,
+        index: DrawerIndex.review,
         labelName: 'レビューを書く',
         icon: const Icon(Icons.reviews),
       ),
       DrawerList(
-        index: DrawerIndex.ABOUT,
+        index: DrawerIndex.about,
         labelName: 'このアプリについて',
         icon: const Icon(Icons.info),
       ),
@@ -57,7 +57,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
+        children: [
           Container(
             width: double.infinity,
             padding: const EdgeInsets.only(top: 40.0),
@@ -112,7 +112,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
           navigationtoScreen(listData.index!);
         },
         child: Stack(
-          children: <Widget>[
+          children: [
             Container(
               padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: Row(
@@ -218,11 +218,10 @@ class _HomeDrawerState extends State<HomeDrawer> {
 }
 
 enum DrawerIndex {
-  HOME,
-  SHARE,
-  REVIEW,
-  TERMS,
-  ABOUT,
+  home,
+  share,
+  review,
+  about,
 }
 
 class DrawerList {

@@ -101,7 +101,7 @@ class _DrawerUserControllerState extends State<DrawerUserController>
           width: MediaQuery.of(context).size.width + widget.drawerWidth,
           //we use with as screen width and add drawerWidth (from navigation_home_screen)
           child: Row(
-            children: <Widget>[
+            children: [
               SizedBox(
                 width: widget.drawerWidth,
                 //we divided first drawer Width with HomeDrawer and second full-screen Width with all home screen, we called screen View
@@ -114,15 +114,15 @@ class _DrawerUserControllerState extends State<DrawerUserController>
                       transform: Matrix4.translationValues(
                           scrollController!.offset, 0.0, 0.0),
                       child: HomeDrawer(
-                        screenIndex: widget.screenIndex == null
-                            ? DrawerIndex.HOME
-                            : widget.screenIndex,
+                        screenIndex: widget.screenIndex ?? DrawerIndex.home,
                         iconAnimationController: iconAnimationController,
                         callBackIndex: (DrawerIndex indexType) {
                           onDrawerClick();
                           try {
                             widget.onDrawerCall!(indexType);
-                          } catch (e) {}
+                          } catch (e) {
+                            // NOP
+                          }
                         },
                       ),
                     );
@@ -141,7 +141,7 @@ class _DrawerUserControllerState extends State<DrawerUserController>
                     ],
                   ),
                   child: Stack(
-                    children: <Widget>[
+                    children: [
                       //this IgnorePointer we use as touch(user Interface) widget.screen View, for example scrolloffset == 1 means drawer is close we just allow touching all widget.screen View
                       IgnorePointer(
                         ignoring: scrolloffset == 1 || false,
@@ -168,9 +168,8 @@ class _DrawerUserControllerState extends State<DrawerUserController>
                               borderRadius: BorderRadius.circular(
                                   AppBar().preferredSize.height),
                               child: Center(
-                                child: widget.menuView != null
-                                    ? widget.menuView
-                                    : AnimatedIcon(
+                                child: widget.menuView ??
+                                    AnimatedIcon(
                                         icon: widget.animatedIconData ??
                                             AnimatedIcons.arrow_menu,
                                         progress: iconAnimationController!),
