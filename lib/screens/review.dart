@@ -59,6 +59,7 @@ class ReviewScreen extends StatelessWidget {
                   onPressed: () async {
                     if (await inAppReview.isAvailable()) {
                       inAppReview.requestReview();
+                      // inAppReview.openStoreListing(appStoreId: 'App Store ID');
                     }
                   },
                   child: const Text('レビューする'),
