@@ -6,16 +6,16 @@ import 'package:strange_sounds/screens/drawer/about.dart';
 import 'package:strange_sounds/screens/drawer/review.dart';
 import 'package:strange_sounds/screens/drawer/share.dart';
 
-class NavigationHomeScreen extends StatefulWidget {
-  const NavigationHomeScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
-    return _NavigationHomeScreenState();
+    return _HomeScreenState();
   }
 }
 
-class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
+class _HomeScreenState extends State<HomeScreen> {
   Widget? screenView;
   DrawerIndex? drawerIndex;
 
