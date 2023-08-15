@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-class HumanScreen extends StatefulWidget {
-  const HumanScreen({Key? key}) : super(key: key);
+class CategoryDetailScreen extends StatefulWidget {
+  const CategoryDetailScreen({super.key, required this.title});
+
+  final String title;
 
   @override
   State<StatefulWidget> createState() {
-    return _HumanScreenState();
+    return _CategoryDetailScreenState();
   }
 }
 
-class _HumanScreenState extends State<HumanScreen> {
+class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
   final _audioPlayer = AudioPlayer();
 
   final List<String> _listItem = [
@@ -43,7 +45,7 @@ class _HumanScreenState extends State<HumanScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text("Human"),
+        title: Text(widget.title),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
