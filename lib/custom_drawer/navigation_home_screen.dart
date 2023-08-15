@@ -66,7 +66,7 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
           break;
         case DrawerIndex.REVIEW:
           setState(() {
-            screenView = const ReviewScreen();
+            screenView = ReviewScreen();
           });
           break;
         case DrawerIndex.ABOUT:
