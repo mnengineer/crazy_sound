@@ -44,7 +44,7 @@ class _CategoryHomeScreenState extends State<CategoryHomeScreen> {
         ],
       ),
       body: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
         child: SingleChildScrollView(
           child: GridView.count(
             crossAxisCount: multiple ? 1 : 2,
