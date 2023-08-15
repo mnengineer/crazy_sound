@@ -9,10 +9,9 @@ class ReviewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[600],
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
         elevation: 0,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       ),
       body: Center(
         child: Container(
@@ -35,7 +34,6 @@ class ReviewScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -47,7 +45,6 @@ class ReviewScreen extends StatelessWidget {
                   'アプリを気に入っていただけましたら、レビューをお願いします！\n\n一生懸命改善に取り組みます。\nレビューいただけると幸いです！',
                   style: TextStyle(
                     fontSize: 16,
-                    color: Colors.black,
                   ),
                   textAlign: TextAlign.center,
                 ),

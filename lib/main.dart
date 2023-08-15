@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:strange_sounds/custom_drawer/navigation_home_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:strange_sounds/screens/home.dart';
 
 void main() {
   runApp(const App());
@@ -10,8 +11,14 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: NavigationHomeScreen(),
+    return MaterialApp(
+      theme: ThemeData(
+        useMaterial3: true,
+        primaryColor: Colors.grey[300],
+        textTheme: GoogleFonts.latoTextTheme(),
+      ),
+      darkTheme: ThemeData.dark(),
+      home: const HomeScreen(),
     );
   }
 }

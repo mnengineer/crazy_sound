@@ -41,10 +41,9 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[600],
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
         elevation: 0,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         title: Text(widget.title),
         leading: IconButton(
           onPressed: () {
@@ -61,7 +60,6 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
           mainAxisSpacing: 10,
           children: _listItem
               .map((item) => Card(
-                    color: Colors.transparent,
                     elevation: 0,
                     child: Container(
                       decoration: BoxDecoration(
@@ -78,7 +76,6 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               shape: const CircleBorder(),
-                              primary: Colors.grey[800],
                             ),
                             onPressed: () {
                               _audioPlayer.play(

@@ -27,8 +27,8 @@ class CategoryHomeItem extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               gradient: LinearGradient(begin: Alignment.bottomRight, colors: [
-                Colors.black.withOpacity(.4),
-                Colors.black.withOpacity(.2),
+                Theme.of(context).textTheme.labelSmall!.color!.withOpacity(.4),
+                Theme.of(context).textTheme.labelSmall!.color!.withOpacity(.2),
               ])),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
@@ -49,12 +49,14 @@ class CategoryHomeItem extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.white),
-                child: Center(
-                    child: Text(
-                  "Play Now",
-                  style: TextStyle(
-                      color: Colors.grey[900], fontWeight: FontWeight.bold),
-                )),
+                child: const Center(
+                  child: Text(
+                    "Play Now",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ),
               const SizedBox(
                 height: 30,

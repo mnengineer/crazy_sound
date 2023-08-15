@@ -6,16 +6,16 @@ import 'package:strange_sounds/screens/drawer/about.dart';
 import 'package:strange_sounds/screens/drawer/review.dart';
 import 'package:strange_sounds/screens/drawer/share.dart';
 
-class NavigationHomeScreen extends StatefulWidget {
-  const NavigationHomeScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
-    return _NavigationHomeScreenState();
+    return _HomeScreenState();
   }
 }
 
-class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
+class _HomeScreenState extends State<HomeScreen> {
   Widget? screenView;
   DrawerIndex? drawerIndex;
 
@@ -28,23 +28,19 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: SafeArea(
-        top: false,
-        bottom: false,
-        child: Scaffold(
-          backgroundColor: Colors.white,
-          body: DrawerUserController(
-            screenIndex: drawerIndex,
-            drawerWidth: MediaQuery.of(context).size.width * 0.75,
-            onDrawerCall: (DrawerIndex drawerIndexdata) {
-              changeIndex(drawerIndexdata);
-              //callback from drawer for replace screen as user need with passing DrawerIndex(Enum index)
-            },
-            screenView: screenView,
-            //we replace screen view as we need on navigate starting screens like MyHomePage, HelpScreen, FeedbackScreen, etc...
-          ),
+    return SafeArea(
+      top: false,
+      bottom: false,
+      child: Scaffold(
+        body: DrawerUserController(
+          screenIndex: drawerIndex,
+          drawerWidth: MediaQuery.of(context).size.width * 0.75,
+          onDrawerCall: (DrawerIndex drawerIndexdata) {
+            changeIndex(drawerIndexdata);
+            //callback from drawer for replace screen as user need with passing DrawerIndex(Enum index)
+          },
+          screenView: screenView,
+          //we replace screen view as we need on navigate starting screens like MyHomePage, HelpScreen, FeedbackScreen, etc...
         ),
       ),
     );
