@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:strange_sounds/custom_drawer/drawer_user_controller.dart';
 import 'package:strange_sounds/custom_drawer/home_drawer.dart';
+import 'package:strange_sounds/screens/about.dart';
 import 'package:strange_sounds/screens/home.dart';
+import 'package:strange_sounds/screens/review.dart';
+import 'package:strange_sounds/screens/share.dart';
 
 class NavigationHomeScreen extends StatefulWidget {
   const NavigationHomeScreen({Key? key}) : super(key: key);
@@ -19,7 +22,7 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
   @override
   void initState() {
     drawerIndex = DrawerIndex.HOME;
-    screenView = HomeScreen();
+    screenView = const HomeScreen();
     super.initState();
   }
 
@@ -53,22 +56,22 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
       switch (drawerIndex) {
         case DrawerIndex.HOME:
           setState(() {
-            screenView = HomeScreen();
+            screenView = const HomeScreen();
           });
           break;
-        case DrawerIndex.Help:
+        case DrawerIndex.SHARE:
           setState(() {
-            screenView = HomeScreen();
+            screenView = const ShareScreen();
           });
           break;
-        case DrawerIndex.FeedBack:
+        case DrawerIndex.REVIEW:
           setState(() {
-            screenView = HomeScreen();
+            screenView = ReviewScreen();
           });
           break;
-        case DrawerIndex.Invite:
+        case DrawerIndex.ABOUT:
           setState(() {
-            screenView = HomeScreen();
+            screenView = const AboutScreen();
           });
           break;
         default:

@@ -30,33 +30,22 @@ class _HomeDrawerState extends State<HomeDrawer> {
     drawerList = <DrawerList>[
       DrawerList(
         index: DrawerIndex.HOME,
-        labelName: 'Home',
+        labelName: 'ホーム',
         icon: const Icon(Icons.home),
       ),
       DrawerList(
-        index: DrawerIndex.Help,
-        labelName: 'Help',
-        isAssetsImage: true,
-        imageName: 'assets/images/supportIcon.png',
-      ),
-      DrawerList(
-        index: DrawerIndex.FeedBack,
-        labelName: 'FeedBack',
-        icon: const Icon(Icons.help),
-      ),
-      DrawerList(
-        index: DrawerIndex.Invite,
-        labelName: 'Invite Friend',
-        icon: const Icon(Icons.group),
-      ),
-      DrawerList(
-        index: DrawerIndex.Share,
-        labelName: 'Rate the app',
+        index: DrawerIndex.SHARE,
+        labelName: 'アプリをシェアする',
         icon: const Icon(Icons.share),
       ),
       DrawerList(
-        index: DrawerIndex.About,
-        labelName: 'About Us',
+        index: DrawerIndex.REVIEW,
+        labelName: 'レビューを書く',
+        icon: const Icon(Icons.reviews),
+      ),
+      DrawerList(
+        index: DrawerIndex.ABOUT,
+        labelName: 'アプリについて',
         icon: const Icon(Icons.info),
       ),
     ];
@@ -67,7 +56,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
     var brightness = MediaQuery.of(context).platformBrightness;
     bool isLightMode = brightness == Brightness.light;
     return Scaffold(
-      backgroundColor: Colors.grey.withOpacity(0.5),
+      backgroundColor: Colors.white.withOpacity(0.5),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -80,47 +69,11 @@ class _HomeDrawerState extends State<HomeDrawer> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  AnimatedBuilder(
-                    animation: widget.iconAnimationController!,
-                    builder: (BuildContext context, Widget? child) {
-                      return ScaleTransition(
-                        scale: AlwaysStoppedAnimation<double>(1.0 -
-                            (widget.iconAnimationController!.value) * 0.2),
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation<double>(Tween<double>(
-                                      begin: 0.0, end: 24.0)
-                                  .animate(CurvedAnimation(
-                                      parent: widget.iconAnimationController!,
-                                      curve: Curves.fastOutSlowIn))
-                                  .value /
-                              360),
-                          child: Container(
-                            height: 120,
-                            width: 120,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              boxShadow: <BoxShadow>[
-                                BoxShadow(
-                                    color: Colors.grey.withOpacity(0.5),
-                                    offset: const Offset(2.0, 4.0),
-                                    blurRadius: 8),
-                              ],
-                            ),
-                            child: ClipRRect(
-                              borderRadius:
-                                  const BorderRadius.all(Radius.circular(60.0)),
-                              child: Image.asset('assets/images/userImage.png'),
-                            ),
-                          ),
-                        ),
-                      );
-                    },
-                  ),
+                children: [
                   Padding(
                     padding: const EdgeInsets.only(top: 8, left: 4),
                     child: Text(
-                      'Chris Hemsworth',
+                      'メニュー',
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         color: isLightMode ? Colors.grey : Colors.white,
@@ -154,10 +107,10 @@ class _HomeDrawerState extends State<HomeDrawer> {
             color: Colors.grey.withOpacity(0.5),
           ),
           Column(
-            children: <Widget>[
+            children: [
               ListTile(
                 title: Text(
-                  'Sign Out',
+                  'バージョン情報：1.0.0',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 16,
@@ -165,13 +118,6 @@ class _HomeDrawerState extends State<HomeDrawer> {
                   ),
                   textAlign: TextAlign.left,
                 ),
-                trailing: const Icon(
-                  Icons.power_settings_new,
-                  color: Colors.red,
-                ),
-                onTap: () {
-                  onTapped();
-                },
               ),
               SizedBox(
                 height: MediaQuery.of(context).padding.bottom,
@@ -272,7 +218,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
                             height: 46,
                             decoration: BoxDecoration(
                               color: Colors.blue.withOpacity(0.2),
-                              borderRadius: new BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 topLeft: Radius.circular(0),
                                 topRight: Radius.circular(28),
                                 bottomLeft: Radius.circular(0),
@@ -298,12 +244,10 @@ class _HomeDrawerState extends State<HomeDrawer> {
 
 enum DrawerIndex {
   HOME,
-  FeedBack,
-  Help,
-  Share,
-  About,
-  Invite,
-  Testing,
+  SHARE,
+  REVIEW,
+  TERMS,
+  ABOUT,
 }
 
 class DrawerList {
