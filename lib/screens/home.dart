@@ -80,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.white),
                           child: Center(
                               child: Text(
-                            "Click Now",
+                            "Play Now",
                             style: TextStyle(
                                 color: Colors.grey[900],
                                 fontWeight: FontWeight.bold),
@@ -144,7 +144,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.white),
                           child: Center(
                               child: Text(
-                            "Click Now",
+                            "Play Now",
                             style: TextStyle(
                                 color: Colors.grey[900],
                                 fontWeight: FontWeight.bold),
@@ -208,7 +208,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.white),
                           child: Center(
                               child: Text(
-                            "Click Now",
+                            "Play Now",
                             style: TextStyle(
                                 color: Colors.grey[900],
                                 fontWeight: FontWeight.bold),
