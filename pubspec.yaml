@@ -42,6 +42,7 @@ dependencies:
   just_audio: ^0.9.34
   google_fonts: ^4.0.4
   flutter_riverpod: ^2.3.6
+  hooks_riverpod: ^2.3.7
 
 dev_dependencies:
   flutter_test:
