@@ -57,7 +57,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
+        children: [
           Container(
             width: double.infinity,
             padding: const EdgeInsets.only(top: 40.0),
@@ -112,7 +112,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
           navigationtoScreen(listData.index!);
         },
         child: Stack(
-          children: <Widget>[
+          children: [
             Container(
               padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: Row(
