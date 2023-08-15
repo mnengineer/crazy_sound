@@ -102,10 +102,6 @@ class _HomeDrawerState extends State<HomeDrawer> {
     );
   }
 
-  void onTapped() {
-    print('Doing Something...'); // Print to console.
-  }
-
   Widget inkwell(DrawerList listData) {
     return Material(
       color: Colors.transparent,
