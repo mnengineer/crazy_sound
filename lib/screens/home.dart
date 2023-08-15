@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
-    drawerIndex = DrawerIndex.HOME;
+    drawerIndex = DrawerIndex.home;
     screenView = const CategoryHomeScreen();
     super.initState();
   }
@@ -50,22 +50,22 @@ class _HomeScreenState extends State<HomeScreen> {
     if (drawerIndex != drawerIndexdata) {
       drawerIndex = drawerIndexdata;
       switch (drawerIndex) {
-        case DrawerIndex.HOME:
+        case DrawerIndex.home:
           setState(() {
             screenView = const CategoryHomeScreen();
           });
           break;
-        case DrawerIndex.SHARE:
+        case DrawerIndex.share:
           setState(() {
             screenView = const ShareScreen();
           });
           break;
-        case DrawerIndex.REVIEW:
+        case DrawerIndex.review:
           setState(() {
             screenView = ReviewScreen();
           });
           break;
-        case DrawerIndex.ABOUT:
+        case DrawerIndex.about:
           setState(() {
             screenView = const AboutScreen();
           });
