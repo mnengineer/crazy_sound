@@ -38,6 +38,8 @@ dependencies:
   audioplayers: ^4.1.0
   riverpod: ^2.3.6
   in_app_review: ^2.0.6
+  share_plus: ^7.1.0
+  just_audio: ^0.9.34
 
 dev_dependencies:
   flutter_test:

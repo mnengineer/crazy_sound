@@ -45,7 +45,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
       ),
       DrawerList(
         index: DrawerIndex.ABOUT,
-        labelName: 'アプリについて',
+        labelName: 'このアプリについて',
         icon: const Icon(Icons.info),
       ),
     ];
@@ -101,28 +101,6 @@ class _HomeDrawerState extends State<HomeDrawer> {
                 return inkwell(drawerList![index]);
               },
             ),
-          ),
-          Divider(
-            height: 1,
-            color: Colors.grey.withOpacity(0.5),
-          ),
-          Column(
-            children: [
-              ListTile(
-                title: Text(
-                  'バージョン情報：1.0.0',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
-                    color: Colors.grey.withOpacity(0.5),
-                  ),
-                  textAlign: TextAlign.left,
-                ),
-              ),
-              SizedBox(
-                height: MediaQuery.of(context).padding.bottom,
-              )
-            ],
           ),
         ],
       ),

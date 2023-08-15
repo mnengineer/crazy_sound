@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:in_app_review/in_app_review.dart';
+import 'package:share_plus/share_plus.dart';
 
-class ReviewScreen extends StatelessWidget {
-  ReviewScreen({Key? key}) : super(key: key);
+class ShareScreen extends StatelessWidget {
+  const ShareScreen({Key? key}) : super(key: key);
 
-  final InAppReview inAppReview = InAppReview.instance;
+  void _share(String text) => Share.share(text);
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class ReviewScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(
                     top: 8, bottom: 0, left: 30, right: 30),
                 child: const Text(
-                  'アプリをご利用いただき誠にありがとうございます!',
+                  'アプリをシェアする',
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -44,7 +44,7 @@ class ReviewScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(
                     top: 16, bottom: 0, left: 30, right: 30),
                 child: const Text(
-                  'アプリを気に入っていただけましたら、レビューをお願いします！\n\n一生懸命改善に取り組みます。\nレビューいただけると幸いです！',
+                  'アプリをシェアしていただけると、\n開発者が喜びます！',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black,
@@ -56,12 +56,8 @@ class ReviewScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.only(top: 32),
                 child: ElevatedButton(
-                  onPressed: () async {
-                    if (await inAppReview.isAvailable()) {
-                      inAppReview.requestReview();
-                    }
-                  },
-                  child: const Text('レビューする'),
+                  onPressed: () => _share('Strange Sounds'),
+                  child: const Text('シェアする'),
                 ),
               ),
             ],
