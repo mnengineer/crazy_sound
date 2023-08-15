@@ -53,10 +53,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
 
   @override
   Widget build(BuildContext context) {
-    var brightness = MediaQuery.of(context).platformBrightness;
-    bool isLightMode = brightness == Brightness.light;
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(0.5),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -69,14 +66,13 @@ class _HomeDrawerState extends State<HomeDrawer> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.only(top: 8, left: 4),
+                    padding: EdgeInsets.only(top: 8, left: 4),
                     child: Text(
                       'メニュー',
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
-                        color: isLightMode ? Colors.grey : Colors.white,
                         fontSize: 18,
                       ),
                     ),
@@ -88,9 +84,8 @@ class _HomeDrawerState extends State<HomeDrawer> {
           const SizedBox(
             height: 4,
           ),
-          Divider(
+          const Divider(
             height: 1,
-            color: Colors.grey.withOpacity(0.5),
           ),
           Expanded(
             child: ListView.builder(
@@ -146,7 +141,6 @@ class _HomeDrawerState extends State<HomeDrawer> {
                   ),
                   listData.isAssetsImage
                       ? Container(
-                          // 修正
                           margin: const EdgeInsets.only(left: 4.0, right: 4.0),
                           width: 24,
                           height: 24,
@@ -165,12 +159,19 @@ class _HomeDrawerState extends State<HomeDrawer> {
                   Text(
                     listData.labelName,
                     style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 16,
-                      color: widget.screenIndex == listData.index
-                          ? Colors.black
-                          : Colors.grey.withOpacity(0.5),
-                    ),
+                        fontWeight: FontWeight.w500,
+                        fontSize: 16,
+                        color: widget.screenIndex == listData.index
+                            ? Theme.of(context)
+                                .textTheme
+                                .labelSmall!
+                                .color!
+                                .withOpacity(1)
+                            : Theme.of(context)
+                                .textTheme
+                                .labelSmall!
+                                .color!
+                                .withOpacity(0.4)),
                     textAlign: TextAlign.left,
                   ),
                 ],
@@ -189,7 +190,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
                             0.0,
                             0.0),
                         child: Padding(
-                          padding: EdgeInsets.only(top: 8, bottom: 8),
+                          padding: const EdgeInsets.only(top: 8, bottom: 8),
                           child: Container(
                             width:
                                 MediaQuery.of(context).size.width * 0.75 - 64,

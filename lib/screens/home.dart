@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:strange_sounds/custom_drawer/drawer_user_controller.dart';
 import 'package:strange_sounds/custom_drawer/home_drawer.dart';
@@ -29,23 +28,19 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: SafeArea(
-        top: false,
-        bottom: false,
-        child: Scaffold(
-          backgroundColor: Colors.white,
-          body: DrawerUserController(
-            screenIndex: drawerIndex,
-            drawerWidth: MediaQuery.of(context).size.width * 0.75,
-            onDrawerCall: (DrawerIndex drawerIndexdata) {
-              changeIndex(drawerIndexdata);
-              //callback from drawer for replace screen as user need with passing DrawerIndex(Enum index)
-            },
-            screenView: screenView,
-            //we replace screen view as we need on navigate starting screens like MyHomePage, HelpScreen, FeedbackScreen, etc...
-          ),
+    return SafeArea(
+      top: false,
+      bottom: false,
+      child: Scaffold(
+        body: DrawerUserController(
+          screenIndex: drawerIndex,
+          drawerWidth: MediaQuery.of(context).size.width * 0.75,
+          onDrawerCall: (DrawerIndex drawerIndexdata) {
+            changeIndex(drawerIndexdata);
+            //callback from drawer for replace screen as user need with passing DrawerIndex(Enum index)
+          },
+          screenView: screenView,
+          //we replace screen view as we need on navigate starting screens like MyHomePage, HelpScreen, FeedbackScreen, etc...
         ),
       ),
     );

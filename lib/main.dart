@@ -14,9 +14,10 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
-        platform: TargetPlatform.iOS,
+        primaryColor: Colors.grey[300],
         textTheme: GoogleFonts.latoTextTheme(),
       ),
+      darkTheme: ThemeData.dark(),
       home: const HomeScreen(),
     );
   }

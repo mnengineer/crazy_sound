@@ -16,33 +16,28 @@ class _CategoryHomeScreenState extends State<CategoryHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[600],
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
         elevation: 0,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         title: const Text("Strange Sounds"),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(top: 8, right: 8),
-            child: Container(
-              width: AppBar().preferredSize.height - 8,
-              height: AppBar().preferredSize.height - 8,
-              color: Colors.white,
-              child: Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  borderRadius:
-                      BorderRadius.circular(AppBar().preferredSize.height),
+            padding: const EdgeInsets.only(top: 8, right: 4),
+            child: Material(
+              child: InkWell(
+                borderRadius:
+                    BorderRadius.circular(AppBar().preferredSize.height),
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
                   child: Icon(
                     multiple ? Icons.dashboard : Icons.view_agenda,
-                    color: Colors.grey,
                   ),
-                  onTap: () {
-                    setState(() {
-                      multiple = !multiple;
-                    });
-                  },
                 ),
+                onTap: () {
+                  setState(() {
+                    multiple = !multiple;
+                  });
+                },
               ),
             ),
           ),

@@ -91,10 +91,7 @@ class _DrawerUserControllerState extends State<DrawerUserController>
 
   @override
   Widget build(BuildContext context) {
-    var brightness = MediaQuery.of(context).platformBrightness;
-    bool isLightMode = brightness == Brightness.light;
     return Scaffold(
-      backgroundColor: isLightMode ? Colors.white : Colors.grey,
       body: SingleChildScrollView(
         controller: scrollController,
         scrollDirection: Axis.horizontal,
@@ -138,7 +135,6 @@ class _DrawerUserControllerState extends State<DrawerUserController>
                 //full-screen Width with widget.screenView
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.white,
                     boxShadow: <BoxShadow>[
                       BoxShadow(
                           color: Colors.grey.withOpacity(0.6), blurRadius: 24),
@@ -172,13 +168,9 @@ class _DrawerUserControllerState extends State<DrawerUserController>
                               borderRadius: BorderRadius.circular(
                                   AppBar().preferredSize.height),
                               child: Center(
-                                // if you use your own menu view UI you add form initialization
                                 child: widget.menuView != null
                                     ? widget.menuView
                                     : AnimatedIcon(
-                                        color: isLightMode
-                                            ? Colors.grey
-                                            : Colors.white,
                                         icon: widget.animatedIconData ??
                                             AnimatedIcons.arrow_menu,
                                         progress: iconAnimationController!),
