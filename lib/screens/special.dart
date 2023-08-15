@@ -44,6 +44,12 @@ class _SpecialScreenState extends State<SpecialScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: const Text("Special"),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back),
+        ),
       ),
       body: Container(
         padding: const EdgeInsets.all(20),

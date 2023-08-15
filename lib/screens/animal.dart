@@ -44,6 +44,12 @@ class _AnimalScreenState extends State<AnimalScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: const Text("Animal"),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back),
+        ),
       ),
       body: Container(
         padding: const EdgeInsets.all(20),
