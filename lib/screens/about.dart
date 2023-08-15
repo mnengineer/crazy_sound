@@ -11,14 +11,20 @@ class AboutScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: Container(
+      body: Padding(
         padding: const EdgeInsets.all(20),
-        child: SingleChildScrollView(
-          child: Column(
-            children: const [
-              Text('規約表示'),
-            ],
-          ),
+        child: Column(
+          children: const [
+            Text('Version: 1.0.0', style: TextStyle(fontSize: 18)),
+            SizedBox(height: 10),
+            Text('Developed by: masashi', style: TextStyle(fontSize: 18)),
+            SizedBox(height: 10),
+            Text(
+              'Sound effects obtained from https://www.zapsplat.com',
+              textAlign: TextAlign.center,
+            ),
+            // Add other credits or information as needed
+          ],
         ),
       ),
     );
