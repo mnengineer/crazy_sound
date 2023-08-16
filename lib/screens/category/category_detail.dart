@@ -53,7 +53,7 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
         ),
       ),
       body: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
         child: GridView.count(
           crossAxisCount: 2,
           crossAxisSpacing: 10,
