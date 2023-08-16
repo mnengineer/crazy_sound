@@ -88,13 +88,18 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 shape: const CircleBorder(),
+                                backgroundColor: Colors.white,
+                                foregroundColor: Colors.grey,
                               ),
                               onPressed: () {
                                 _audioPlayer.play(
                                   AssetSource('videos/baby.mp3'),
                                 );
                               },
-                              child: const Icon(Icons.play_arrow),
+                              child: const Icon(
+                                Icons.play_arrow,
+                                color: Colors.black,
+                              ),
                             ),
                           ),
                         ),
