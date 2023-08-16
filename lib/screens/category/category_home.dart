@@ -10,8 +10,23 @@ class CategoryHomeScreen extends StatefulWidget {
   State<CategoryHomeScreen> createState() => _CategoryHomeScreenState();
 }
 
-class _CategoryHomeScreenState extends State<CategoryHomeScreen> {
+class _CategoryHomeScreenState extends State<CategoryHomeScreen>
+    with TickerProviderStateMixin {
   bool multiple = true;
+  AnimationController? animationController;
+
+  @override
+  void initState() {
+    animationController = AnimationController(
+        duration: const Duration(milliseconds: 2000), vsync: this);
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    animationController?.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -54,22 +69,33 @@ class _CategoryHomeScreenState extends State<CategoryHomeScreen> {
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             childAspectRatio: multiple ? 1.5 : 1,
-            children: [
-              for (final item in categoryData)
-                CategoryHomeItem(
-                  title: item.title,
-                  imagePath: item.imagePath,
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) =>
-                            CategoryDetailScreen(title: item.title),
-                      ),
-                    );
-                  },
+            children: List<Widget>.generate(categoryData.length, (int index) {
+              final int count = categoryData.length;
+              final Animation<double> animation =
+                  Tween<double>(begin: 0.0, end: 1.0).animate(
+                CurvedAnimation(
+                  parent: animationController!,
+                  curve: Interval((1 / count) * index, 1.0,
+                      curve: Curves.fastOutSlowIn),
                 ),
-            ],
+              );
+              animationController?.forward();
+              return CategoryHomeItem(
+                title: categoryData[index].title,
+                imagePath: categoryData[index].imagePath,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => CategoryDetailScreen(
+                          title: categoryData[index].title),
+                    ),
+                  );
+                },
+                animation: animation,
+                animationController: animationController,
+              );
+            }),
           ),
         ),
       ),
