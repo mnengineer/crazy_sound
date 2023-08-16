@@ -27,11 +27,11 @@ class CategoryHomeItem extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               gradient: LinearGradient(begin: Alignment.bottomRight, colors: [
-                Theme.of(context).textTheme.labelSmall!.color!.withOpacity(.4),
-                Theme.of(context).textTheme.labelSmall!.color!.withOpacity(.2),
+                Colors.black.withOpacity(.4),
+                Colors.black.withOpacity(.2),
               ])),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 title,
@@ -39,27 +39,6 @@ class CategoryHomeItem extends StatelessWidget {
                     color: Colors.white,
                     fontSize: 35,
                     fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              Container(
-                height: 50,
-                margin: const EdgeInsets.symmetric(horizontal: 40),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.white),
-                child: const Center(
-                  child: Text(
-                    "Play Now",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                height: 30,
               ),
             ],
           ),
