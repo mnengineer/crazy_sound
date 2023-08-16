@@ -43,6 +43,7 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
+        scrolledUnderElevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         title: Text(widget.title),
         leading: IconButton(

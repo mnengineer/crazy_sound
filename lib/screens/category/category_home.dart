@@ -18,6 +18,7 @@ class _CategoryHomeScreenState extends State<CategoryHomeScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
+        scrolledUnderElevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         title: const Text("Strange Sounds"),
         actions: [
