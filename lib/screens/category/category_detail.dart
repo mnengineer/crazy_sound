@@ -61,7 +61,9 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
           mainAxisSpacing: 10,
           children: _listItem
               .map((item) => Card(
-                    elevation: 0,
+                    elevation: 5,
+                    shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(20))),
                     child: Container(
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
