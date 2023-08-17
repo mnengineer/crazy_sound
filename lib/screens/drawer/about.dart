@@ -22,13 +22,13 @@ class AboutScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 18),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 8),
+              SizedBox(height: 12),
               Text(
                 'Developed by: masashi',
                 style: TextStyle(fontSize: 18),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 12),
+              SizedBox(height: 24),
               Text(
                 'Sound effects obtained from:\nhttps://www.zapsplat.com',
                 style: TextStyle(fontSize: 18),
