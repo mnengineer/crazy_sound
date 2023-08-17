@@ -16,6 +16,7 @@ class ReviewScreen extends StatelessWidget {
       body: Center(
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 20),
+          margin: const EdgeInsets.only(bottom: 70),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -27,15 +28,15 @@ class ReviewScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 24),
               const Text(
                 'アプリを気に入っていただけましたら\nレビューをお願いします！\n\n一生懸命改善に取り組みます。\nレビューいただけると幸いです！',
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 18,
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 24),
               ElevatedButton(
                 onPressed: () async {
                   if (await inAppReview.isAvailable()) {

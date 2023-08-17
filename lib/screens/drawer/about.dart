@@ -13,6 +13,7 @@ class AboutScreen extends StatelessWidget {
       body: Center(
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 20),
+          margin: const EdgeInsets.only(bottom: 70),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
@@ -21,13 +22,13 @@ class AboutScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 18),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 8),
+              SizedBox(height: 12),
               Text(
                 'Developed by: masashi',
                 style: TextStyle(fontSize: 18),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 12),
+              SizedBox(height: 24),
               Text(
                 'Sound effects obtained from:\nhttps://www.zapsplat.com',
                 style: TextStyle(fontSize: 18),

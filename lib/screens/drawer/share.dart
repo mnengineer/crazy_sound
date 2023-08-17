@@ -16,6 +16,7 @@ class ShareScreen extends StatelessWidget {
       body: Center(
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 20),
+          margin: const EdgeInsets.only(bottom: 70),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -27,15 +28,15 @@ class ShareScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 24),
               const Text(
-                'アプリをシェアしていただけると、\n開発者が喜びます！',
+                'アプリをシェアしていただけると\n開発者が喜びます！',
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 18,
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 24),
               ElevatedButton(
                 onPressed: () => _share('Strange Sounds'),
                 child: const Text('シェアする'),
