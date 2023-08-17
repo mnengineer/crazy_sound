@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:in_app_review/in_app_review.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ReviewScreen extends StatelessWidget {
   ReviewScreen({Key? key}) : super(key: key);
@@ -20,23 +21,23 @@ class ReviewScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
-                'アプリをご利用いただき\n誠にありがとうございます!',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context).review_title,
+                style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 24),
-              const Text(
-                'アプリを気に入っていただけましたら\nレビューをお願いします！\n\n一生懸命改善に取り組みます。\nレビューいただけると幸いです！',
-                style: TextStyle(
+              const SizedBox(height: 12),
+              Text(
+                AppLocalizations.of(context).review_description,
+                style: const TextStyle(
                   fontSize: 18,
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 12),
               ElevatedButton(
                 onPressed: () async {
                   if (await inAppReview.isAvailable()) {
@@ -44,7 +45,9 @@ class ReviewScreen extends StatelessWidget {
                     // inAppReview.openStoreListing(appStoreId: 'App Store ID');
                   }
                 },
-                child: const Text('レビューする'),
+                child: Text(
+                  AppLocalizations.of(context).review_button,
+                ),
               ),
             ],
           ),
