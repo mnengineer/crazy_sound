@@ -1,1 +1,1 @@
-# Strange Sound App
+# Crazy Sound App
