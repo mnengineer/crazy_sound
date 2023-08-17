@@ -16,6 +16,7 @@ class ReviewScreen extends StatelessWidget {
       body: Center(
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 20),
+          margin: const EdgeInsets.only(bottom: 70),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
