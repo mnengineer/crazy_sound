@@ -15,52 +15,35 @@ class ReviewScreen extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).padding.top,
-                    left: 16,
-                    right: 16),
-                child: Image.asset('assets/images/baby.jpg'),
-              ),
-              Container(
-                padding: const EdgeInsets.only(
-                    top: 8, bottom: 0, left: 30, right: 30),
-                child: const Text(
-                  'アプリをご利用いただき誠にありがとうございます!',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textAlign: TextAlign.center,
+              const Text(
+                'アプリをご利用いただき\n誠にありがとうございます!',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
                 ),
+                textAlign: TextAlign.center,
               ),
-              Container(
-                padding: const EdgeInsets.only(
-                    top: 16, bottom: 0, left: 30, right: 30),
-                child: const Text(
-                  'アプリを気に入っていただけましたら、レビューをお願いします！\n\n一生懸命改善に取り組みます。\nレビューいただけると幸いです！',
-                  style: TextStyle(
-                    fontSize: 16,
-                  ),
-                  textAlign: TextAlign.center,
+              const SizedBox(height: 8),
+              const Text(
+                'アプリを気に入っていただけましたら\nレビューをお願いします！\n\n一生懸命改善に取り組みます。\nレビューいただけると幸いです！',
+                style: TextStyle(
+                  fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
-              // ボタンを配置
-              Container(
-                padding: const EdgeInsets.only(top: 32),
-                child: ElevatedButton(
-                  onPressed: () async {
-                    if (await inAppReview.isAvailable()) {
-                      inAppReview.requestReview();
-                      // inAppReview.openStoreListing(appStoreId: 'App Store ID');
-                    }
-                  },
-                  child: const Text('レビューする'),
-                ),
+              const SizedBox(height: 12),
+              ElevatedButton(
+                onPressed: () async {
+                  if (await inAppReview.isAvailable()) {
+                    inAppReview.requestReview();
+                    // inAppReview.openStoreListing(appStoreId: 'App Store ID');
+                  }
+                },
+                child: const Text('レビューする'),
               ),
             ],
           ),
