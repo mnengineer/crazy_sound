@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:strange_sounds/data/category_data.dart';
 import 'package:strange_sounds/screens/category/category_detail.dart';
 import 'package:strange_sounds/widgets/category_home_item.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CategoryHomeScreen extends StatefulWidget {
   const CategoryHomeScreen({Key? key}) : super(key: key);
@@ -35,7 +36,7 @@ class _CategoryHomeScreenState extends State<CategoryHomeScreen>
         elevation: 0,
         scrolledUnderElevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        title: const Text("Strange Sounds"),
+        title: Text(AppLocalizations.of(context).title),
         actions: [
           Padding(
             padding: const EdgeInsets.only(top: 8, right: 4),

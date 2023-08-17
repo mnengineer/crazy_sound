@@ -43,6 +43,9 @@ dependencies:
   google_fonts: ^4.0.4
   flutter_riverpod: ^2.3.6
   hooks_riverpod: ^2.3.7
+  flutter_localizations:
+    sdk: flutter
+  intl: any
 
 dev_dependencies:
   flutter_test:
@@ -60,6 +63,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  generate: true
   assets:
     - assets/images/baby.jpg
     - assets/videos/baby.mp3

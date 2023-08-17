@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomeDrawer extends StatefulWidget {
   const HomeDrawer(
@@ -22,30 +23,35 @@ class _HomeDrawerState extends State<HomeDrawer> {
   List<DrawerList>? drawerList;
   @override
   void initState() {
-    setDrawerListArray();
     super.initState();
+  }
+
+  @override
+  void didUpdateWidget(covariant HomeDrawer oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    setDrawerListArray();
   }
 
   void setDrawerListArray() {
     drawerList = <DrawerList>[
       DrawerList(
         index: DrawerIndex.home,
-        labelName: 'ホーム',
+        labelName: AppLocalizations.of(context).home,
         icon: const Icon(Icons.home),
       ),
       DrawerList(
         index: DrawerIndex.share,
-        labelName: 'アプリをシェアする',
+        labelName: AppLocalizations.of(context).share,
         icon: const Icon(Icons.share),
       ),
       DrawerList(
         index: DrawerIndex.review,
-        labelName: 'レビューを書く',
+        labelName: AppLocalizations.of(context).review,
         icon: const Icon(Icons.reviews),
       ),
       DrawerList(
         index: DrawerIndex.about,
-        labelName: 'このアプリについて',
+        labelName: AppLocalizations.of(context).about,
         icon: const Icon(Icons.info),
       ),
     ];
@@ -66,12 +72,12 @@ class _HomeDrawerState extends State<HomeDrawer> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: const [
+                children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 8, left: 4),
+                    padding: const EdgeInsets.only(top: 8, left: 4),
                     child: Text(
-                      'メニュー',
-                      style: TextStyle(
+                      AppLocalizations.of(context).menu,
+                      style: const TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 18,
                       ),

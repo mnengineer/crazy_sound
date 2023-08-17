@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ShareScreen extends StatelessWidget {
   const ShareScreen({Key? key}) : super(key: key);
@@ -20,18 +21,18 @@ class ShareScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
-                'アプリをシェアする',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context).share_title,
+                style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 24),
-              const Text(
-                'アプリをシェアしていただけると\n開発者が喜びます！',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context).share_description,
+                style: const TextStyle(
                   fontSize: 18,
                 ),
                 textAlign: TextAlign.center,
@@ -39,7 +40,9 @@ class ShareScreen extends StatelessWidget {
               const SizedBox(height: 24),
               ElevatedButton(
                 onPressed: () => _share('Strange Sounds'),
-                child: const Text('シェアする'),
+                child: Text(
+                  AppLocalizations.of(context).share_button,
+                ),
               ),
             ],
           ),

@@ -1,0 +1,21 @@
+{
+  "@@locale":"ja",
+  "title":"Strange Sound",
+  "menu": "メニュー",
+  "home": "ホーム",
+  "share": "アプリをシェアする",
+  "review": "レビューを書く",
+  "about": "このアプリについて",
+  "share_title": "アプリをシェアする",
+  "share_description": "アプリをシェアしていただけると\n開発者が喜びます！",
+  "share_button": "シェアする",
+  "review_title": "アプリをご利用いただき\n誠にありがとうございます!",
+  "review_description": "アプリを気に入っていただけましたら\nレビューをお願いします！\n\n一生懸命改善に取り組みます。\nレビューいただけると幸いです！",
+  "review_button": "レビューする",
+  "about_version": "バージョン： 1.0.0",
+  "about_developer": "開発者： Masashi",
+  "about_license": "サウンドエフェクトの利用先：\nhttps://www.zapsplat.com",
+  "animal": "動物",
+  "human": "人間",
+  "other": "その他"
+}
