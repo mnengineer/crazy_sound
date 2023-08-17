@@ -10,20 +10,32 @@ class AboutScreen extends StatelessWidget {
         elevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          children: const [
-            Text('Version: 1.0.0', style: TextStyle(fontSize: 18)),
-            SizedBox(height: 10),
-            Text('Developed by: masashi', style: TextStyle(fontSize: 18)),
-            SizedBox(height: 10),
-            Text(
-              'Sound effects obtained from https://www.zapsplat.com',
-              textAlign: TextAlign.center,
-            ),
-            // Add other credits or information as needed
-          ],
+      body: Center(
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Text(
+                'Version: 1.0.0',
+                style: TextStyle(fontSize: 18),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 8),
+              Text(
+                'Developed by: masashi',
+                style: TextStyle(fontSize: 18),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 12),
+              Text(
+                'Sound effects obtained from:\nhttps://www.zapsplat.com',
+                style: TextStyle(fontSize: 18),
+                textAlign: TextAlign.center,
+              ),
+              // Add other credits or information as needed
+            ],
+          ),
         ),
       ),
     );
