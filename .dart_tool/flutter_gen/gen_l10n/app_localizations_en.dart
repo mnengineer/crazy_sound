@@ -5,7 +5,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get title => 'Strange Sound';
+  String get title => 'Crazy Sound';
 
   @override
   String get menu => 'Menu';

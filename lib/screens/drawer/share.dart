@@ -39,7 +39,7 @@ class ShareScreen extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               ElevatedButton(
-                onPressed: () => _share('Strange Sound'),
+                onPressed: () => _share('Crazy Sound'),
                 child: Text(
                   AppLocalizations.of(context).share_button,
                 ),
