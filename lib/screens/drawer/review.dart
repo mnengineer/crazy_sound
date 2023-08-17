@@ -29,7 +29,7 @@ class ReviewScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 12),
               Text(
                 AppLocalizations.of(context).review_description,
                 style: const TextStyle(
@@ -37,7 +37,7 @@ class ReviewScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 12),
               ElevatedButton(
                 onPressed: () async {
                   if (await inAppReview.isAvailable()) {

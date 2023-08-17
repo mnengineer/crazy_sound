@@ -35,7 +35,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get review_title => 'Thank you for using the app!';
 
   @override
-  String get review_description => 'If you like the app,\nplease leave a review!\n\nI will work hard to improve.\nI would appreciate your review!';
+  String get review_description => 'If you like the app,\nplease leave a review!\nI will work hard to improve.\nI would appreciate your review!';
 
   @override
   String get review_button => 'Review';

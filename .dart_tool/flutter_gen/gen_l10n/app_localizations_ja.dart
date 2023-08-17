@@ -35,7 +35,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get review_title => 'アプリをご利用いただき\n誠にありがとうございます!';
 
   @override
-  String get review_description => 'アプリを気に入っていただけましたら\nレビューをお願いします！\n\n一生懸命改善に取り組みます。\nレビューいただけると幸いです！';
+  String get review_description => 'アプリを気に入っていただけましたら\nレビューをお願いします！\n一生懸命改善に取り組みます。\nレビューいただけると幸いです！';
 
   @override
   String get review_button => 'レビューする';

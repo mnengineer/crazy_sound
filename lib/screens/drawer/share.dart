@@ -29,7 +29,7 @@ class ShareScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 12),
               Text(
                 AppLocalizations.of(context).share_description,
                 style: const TextStyle(
@@ -37,7 +37,7 @@ class ShareScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 12),
               ElevatedButton(
                 onPressed: () => _share('Strange Sounds'),
                 child: Text(
