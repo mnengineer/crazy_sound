@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
+import 'package:just_audio/just_audio.dart';
+import 'package:strange_sounds/data/category_item_data.dart';
 
 class CategoryDetailScreen extends StatefulWidget {
   const CategoryDetailScreen({super.key, required this.title});
@@ -16,23 +17,6 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen>
     with TickerProviderStateMixin {
   final _audioPlayer = AudioPlayer();
   AnimationController? animationController;
-
-  final List<String> _listItem = [
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-    'assets/images/baby.jpg',
-  ];
 
   @override
   void initState() {
@@ -69,8 +53,8 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen>
           crossAxisCount: 2,
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
-          children: List<Widget>.generate(_listItem.length, (int index) {
-            final int count = _listItem.length;
+          children: List<Widget>.generate(categoryItemData.length, (int index) {
+            final int count = categoryItemData.length;
             final Animation<double> animation =
                 Tween<double>(begin: 0.0, end: 1.0).animate(
               CurvedAnimation(
@@ -96,7 +80,8 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen>
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
                             image: DecorationImage(
-                                image: AssetImage(_listItem[index]),
+                                image: AssetImage(
+                                    categoryItemData[index].imageUrl),
                                 fit: BoxFit.cover)),
                         child: Container(
                           decoration: BoxDecoration(
@@ -120,10 +105,11 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen>
                                   backgroundColor: Colors.white,
                                   foregroundColor: Colors.grey,
                                 ),
-                                onPressed: () {
-                                  _audioPlayer.play(
-                                    AssetSource('videos/baby.mp3'),
+                                onPressed: () async {
+                                  await _audioPlayer.setAsset(
+                                    categoryItemData[index].audioUrl,
                                   );
+                                  _audioPlayer.play();
                                 },
                                 child: const Icon(
                                   Icons.play_arrow,
