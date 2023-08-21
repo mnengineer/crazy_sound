@@ -109,6 +109,8 @@ flutter:
     - assets/images/animal/wolf.png
     - assets/images/animal/yak.png
     - assets/images/animal/zebra.png
+    - assets/images/animal/pug.png
+    - assets/images/animal/cow-2.png
 
   # assets/images/bird/
     - assets/images/bird/african-grey-parrot.png
@@ -123,10 +125,16 @@ flutter:
     - assets/images/bird/rooster.png
     - assets/images/bird/swan.png
     - assets/images/bird/turkey.png
+    - assets/images/bird/penguin-2.png
 
   # assets/images/human/
+    - assets/images/human/baby.jpg
+    - assets/images/human/man.jpg
+    - assets/images/human/old-man.jpg
+    - assets/images/human/people.png
 
   # assets/images/other/
+    - assets/images/other/roller-coaster.jpg
 
   # assets/videos/animal/
     - assets/videos/animal/alligator.mp3
@@ -188,11 +196,11 @@ flutter:
   # assets/videos/human/
     - assets/videos/human/baby.mp3
     - assets/videos/human/man.mp3
-    - assets/videos/human/old_man.mp3
+    - assets/videos/human/old-man.mp3
     - assets/videos/human/people.mp3
 
   # assets/videos/other/
-    - assets/videos/other/roller_coaster.mp3
+    - assets/videos/other/roller-coaster.mp3
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

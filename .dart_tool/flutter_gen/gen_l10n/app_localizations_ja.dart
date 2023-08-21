@@ -35,7 +35,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get review_title => 'アプリをご利用いただき\n誠にありがとうございます!';
 
   @override
-  String get review_description => 'アプリを気に入っていただけましたら\nレビューをお願いします！\n一生懸命改善に取り組みます。\nレビューいただけると幸いです！';
+  String get review_description => 'アプリを気に入っていただけましたら\nレビューいただけると幸いです！';
 
   @override
   String get review_button => 'レビューする';
@@ -47,7 +47,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get about_developer => '開発者： Masashi';
 
   @override
-  String get about_license => 'サウンドエフェクトの利用先：\nhttps://www.zapsplat.com';
+  String get about_license => 'クレジット：Google\n(https://g.co/kgs/UBHtLW)';
 
   @override
   String get animal => '動物';
