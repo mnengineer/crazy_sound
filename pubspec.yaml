@@ -67,50 +67,131 @@ dev_dependencies:
 flutter:
   generate: true
   assets:
-    - assets/images/animal/cat.png
-    - assets/images/animal/dog.png
-    - assets/images/animal/cow.png
-    - assets/images/animal/elephant.png
+  # assets/images/animal/
+    - assets/images/animal/alligator.png
+    - assets/images/animal/alpaca.png
+    - assets/images/animal/anteater.png
+    - assets/images/animal/antelope.png
     - assets/images/animal/ape.png
+    - assets/images/animal/camel.png
+    - assets/images/animal/cat.png
+    - assets/images/animal/cow.png
+    - assets/images/animal/dinosaur.png
+    - assets/images/animal/dog.png
+    - assets/images/animal/elephant.png
+    - assets/images/animal/ferret.png
+    - assets/images/animal/frog.png
+    - assets/images/animal/giraffe.png
+    - assets/images/animal/guinea-pig.png
+    - assets/images/animal/hedgehog.png
+    - assets/images/animal/hippopotamus.png
     - assets/images/animal/horse.png
-    - assets/images/animal/whale.png
+    - assets/images/animal/hyena.png
+    - assets/images/animal/komodo-dragon.png
+    - assets/images/animal/leopard.png
+    - assets/images/animal/lion.png
+    - assets/images/animal/lizard.png
+    - assets/images/animal/moose.png
+    - assets/images/animal/otter.png
+    - assets/images/animal/panda.png
     - assets/images/animal/pig.png
+    - assets/images/animal/rabbit.png
+    - assets/images/animal/raccoon.png
+    - assets/images/animal/rat.png
+    - assets/images/animal/rattlesnake.png
+    - assets/images/animal/rhinoceros.png
+    - assets/images/animal/scorpion.png
+    - assets/images/animal/shark.png
     - assets/images/animal/sheep.png
-    - assets/images/animal/turkey.png
+    - assets/images/animal/tiger.png
+    - assets/images/animal/turtle.png
+    - assets/images/animal/whale.png
+    - assets/images/animal/wolf.png
+    - assets/images/animal/yak.png
+    - assets/images/animal/zebra.png
+
+  # assets/images/bird/
+    - assets/images/bird/african-grey-parrot.png
+    - assets/images/bird/chicken.png
+    - assets/images/bird/crow.png
+    - assets/images/bird/dove.png
     - assets/images/bird/duck.png
+    - assets/images/bird/falcon.png
     - assets/images/bird/owl.png
+    - assets/images/bird/penguin.png
+    - assets/images/bird/robin.png
+    - assets/images/bird/rooster.png
+    - assets/images/bird/swan.png
+    - assets/images/bird/turkey.png
+
+  # assets/images/human/
+
+  # assets/images/other/
+
+  # assets/videos/animal/
+    - assets/videos/animal/alligator.mp3
+    - assets/videos/animal/alpaca.mp3
+    - assets/videos/animal/anteater.mp3
+    - assets/videos/animal/antelope.mp3
+    - assets/videos/animal/ape.mp3
+    - assets/videos/animal/camel.mp3
     - assets/videos/animal/cat.mp3
     - assets/videos/animal/cow.mp3
+    - assets/videos/animal/dinosaur.mp3
     - assets/videos/animal/dog.mp3
-    - assets/videos/animal/donkey.mp3
     - assets/videos/animal/elephant.mp3
-    - assets/videos/animal/goat.mp3
+    - assets/videos/animal/ferret.mp3
+    - assets/videos/animal/frog.mp3
+    - assets/videos/animal/giraffe.mp3
+    - assets/videos/animal/guinea-pig.mp3
+    - assets/videos/animal/hedgehog.mp3
+    - assets/videos/animal/hippopotamus.mp3
     - assets/videos/animal/horse.mp3
-    - assets/videos/animal/monkey.mp3
+    - assets/videos/animal/hyena.mp3
+    - assets/videos/animal/komodo-dragon.mp3
+    - assets/videos/animal/leopard.mp3
+    - assets/videos/animal/lion.mp3
+    - assets/videos/animal/lizard.mp3
+    - assets/videos/animal/moose.mp3
+    - assets/videos/animal/otter.mp3
+    - assets/videos/animal/panda.mp3
     - assets/videos/animal/pig.mp3
+    - assets/videos/animal/rabbit.mp3
+    - assets/videos/animal/raccoon.mp3
+    - assets/videos/animal/rat.mp3
+    - assets/videos/animal/rattlesnake.mp3
+    - assets/videos/animal/rhinoceros.mp3
+    - assets/videos/animal/scorpion.mp3
+    - assets/videos/animal/shark.mp3
     - assets/videos/animal/sheep.mp3
+    - assets/videos/animal/tiger.mp3
+    - assets/videos/animal/turtle.mp3
     - assets/videos/animal/whale.mp3
-    - assets/videos/bird/bulbul.mp3
-    - assets/videos/bird/chick.mp3
-    - assets/videos/bird/chiken.mp3
+    - assets/videos/animal/wolf.mp3
+    - assets/videos/animal/yak.mp3
+    - assets/videos/animal/zebra.mp3
+
+  # assets/videos/bird/
+    - assets/videos/bird/african-grey-parrot.mp3
+    - assets/videos/bird/chicken.mp3
     - assets/videos/bird/crow.mp3
+    - assets/videos/bird/dove.mp3
     - assets/videos/bird/duck.mp3
-    - assets/videos/bird/flycatcher.mp3
-    - assets/videos/bird/hawk.mp3
-    - assets/videos/bird/heron.mp3
-    - assets/videos/bird/little_grebe.mp3
-    - assets/videos/bird/magpie.mp3
-    - assets/videos/bird/mallard.mp3
+    - assets/videos/bird/falcon.mp3
     - assets/videos/bird/owl.mp3
-    - assets/videos/bird/river_bird.mp3
-    - assets/videos/bird/sparrows.mp3
-    - assets/videos/bird/swallows.mp3
-    - assets/videos/bird/tropical_bird.mp3
-    - assets/videos/bird/warbler.mp3
+    - assets/videos/bird/penguin.mp3
+    - assets/videos/bird/robin.mp3
+    - assets/videos/bird/rooster.mp3
+    - assets/videos/bird/swan.mp3
+    - assets/videos/bird/turkey.mp3
+
+  # assets/videos/human/
     - assets/videos/human/baby.mp3
     - assets/videos/human/man.mp3
     - assets/videos/human/old_man.mp3
     - assets/videos/human/people.mp3
+
+  # assets/videos/other/
     - assets/videos/other/roller_coaster.mp3
 
   # The following line ensures that the Material Icons font is
