@@ -3,7 +3,7 @@ import 'package:strange_sounds/models/category.dart';
 const categoryData = [
   Category(
     title: 'Animal',
-    imagePath: 'assets/images/animal/dinosaur.png',
+    imagePath: 'assets/images/animal/penguin.png',
   ),
   Category(
     title: 'Bird',
