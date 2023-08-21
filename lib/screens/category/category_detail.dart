@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:strange_sounds/data/category_item_data.dart';
+import 'package:strange_sounds/data/animal_item_data.dart';
+import 'package:strange_sounds/data/bird_item_data.dart';
+import 'package:strange_sounds/data/human_item_data.dart';
+import 'package:strange_sounds/data/other_item_data.dart';
+import 'package:strange_sounds/models/category_item.dart';
 
 class CategoryDetailScreen extends StatefulWidget {
   const CategoryDetailScreen({super.key, required this.title});
@@ -34,6 +38,16 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen>
 
   @override
   Widget build(BuildContext context) {
+    List<CategoryItem> categoryItemData;
+    if (widget.title == 'Animal') {
+      categoryItemData = animalItemData;
+    } else if (widget.title == 'Bird') {
+      categoryItemData = birdItemData;
+    } else if (widget.title == 'Human') {
+      categoryItemData = humanItemData;
+    } else {
+      categoryItemData = otherItemData;
+    }
     return Scaffold(
       appBar: AppBar(
         elevation: 0,

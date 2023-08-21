@@ -67,8 +67,51 @@ dev_dependencies:
 flutter:
   generate: true
   assets:
-    - assets/images/baby.jpg
+    - assets/images/animal/cat.png
+    - assets/images/animal/dog.png
+    - assets/images/animal/cow.png
+    - assets/images/animal/elephant.png
+    - assets/images/animal/ape.png
+    - assets/images/animal/horse.png
+    - assets/images/animal/whale.png
+    - assets/images/animal/pig.png
+    - assets/images/animal/sheep.png
+    - assets/images/animal/turkey.png
+    - assets/images/bird/duck.png
+    - assets/images/bird/owl.png
     - assets/videos/animal/cat.mp3
+    - assets/videos/animal/cow.mp3
+    - assets/videos/animal/dog.mp3
+    - assets/videos/animal/donkey.mp3
+    - assets/videos/animal/elephant.mp3
+    - assets/videos/animal/goat.mp3
+    - assets/videos/animal/horse.mp3
+    - assets/videos/animal/monkey.mp3
+    - assets/videos/animal/pig.mp3
+    - assets/videos/animal/sheep.mp3
+    - assets/videos/animal/whale.mp3
+    - assets/videos/bird/bulbul.mp3
+    - assets/videos/bird/chick.mp3
+    - assets/videos/bird/chiken.mp3
+    - assets/videos/bird/crow.mp3
+    - assets/videos/bird/duck.mp3
+    - assets/videos/bird/flycatcher.mp3
+    - assets/videos/bird/hawk.mp3
+    - assets/videos/bird/heron.mp3
+    - assets/videos/bird/little_grebe.mp3
+    - assets/videos/bird/magpie.mp3
+    - assets/videos/bird/mallard.mp3
+    - assets/videos/bird/owl.mp3
+    - assets/videos/bird/river_bird.mp3
+    - assets/videos/bird/sparrows.mp3
+    - assets/videos/bird/swallows.mp3
+    - assets/videos/bird/tropical_bird.mp3
+    - assets/videos/bird/warbler.mp3
+    - assets/videos/human/baby.mp3
+    - assets/videos/human/man.mp3
+    - assets/videos/human/old_man.mp3
+    - assets/videos/human/people.mp3
+    - assets/videos/other/roller_coaster.mp3
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
