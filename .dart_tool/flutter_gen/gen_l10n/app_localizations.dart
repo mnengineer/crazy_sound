@@ -156,7 +156,7 @@ abstract class AppLocalizations {
   /// No description provided for @review_description.
   ///
   /// In en, this message translates to:
-  /// **'If you like the app,\nplease leave a review!\nI will work hard to improve.\nI would appreciate your review!'**
+  /// **'If you like the app,\nI would appreciate your review!'**
   String get review_description;
 
   /// No description provided for @review_button.
@@ -180,7 +180,7 @@ abstract class AppLocalizations {
   /// No description provided for @about_license.
   ///
   /// In en, this message translates to:
-  /// **'Sound effects obtained from:\nhttps://www.zapsplat.com'**
+  /// **'Credit: Google\n(https://g.co/kgs/UBHtLW)'**
   String get about_license;
 
   /// No description provided for @animal.

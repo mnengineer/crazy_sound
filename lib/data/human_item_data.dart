@@ -2,23 +2,23 @@ import 'package:strange_sounds/models/category_item.dart';
 
 const humanItemData = [
   CategoryItem(
-    title: 'man',
-    imageUrl: 'assets/images/human/',
+    title: 'baby',
+    imageUrl: 'assets/images/human/baby.jpg',
     audioUrl: 'assets/videos/human/baby.mp3',
   ),
   CategoryItem(
     title: 'man',
-    imageUrl: 'assets/images/human/',
+    imageUrl: 'assets/images/human/man.jpg',
     audioUrl: 'assets/videos/human/man.mp3',
   ),
   CategoryItem(
     title: 'oldman',
-    imageUrl: 'assets/images/human/',
-    audioUrl: 'assets/videos/human/old_man.mp3',
+    imageUrl: 'assets/images/human/old-man.jpg',
+    audioUrl: 'assets/videos/human/old-man.mp3',
   ),
   CategoryItem(
     title: 'people',
-    imageUrl: 'assets/images/human/',
+    imageUrl: 'assets/images/human/people.png',
     audioUrl: 'assets/videos/human/people.mp3',
   ),
 ];
