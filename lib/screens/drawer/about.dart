@@ -29,7 +29,7 @@ class AboutScreen extends StatelessWidget {
                 style: const TextStyle(fontSize: 18),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 8),
               Text(
                 AppLocalizations.of(context).about_license,
                 style: const TextStyle(fontSize: 18),
