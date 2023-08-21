@@ -68,7 +68,7 @@ flutter:
   generate: true
   assets:
     - assets/images/baby.jpg
-    - assets/videos/baby.mp3
+    - assets/videos/animal/cat.mp3
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
