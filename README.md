@@ -1,3 +1,4 @@
 # Crazy Sound App
 
-# アーキテクチャ&パッケージ等
+# Architecure & Package
+
