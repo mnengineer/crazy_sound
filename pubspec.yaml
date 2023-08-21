@@ -67,7 +67,18 @@ dev_dependencies:
 flutter:
   generate: true
   assets:
-    - assets/images/baby.jpg
+    - assets/images/animal/cat.png
+    - assets/images/animal/dog.png
+    - assets/images/animal/cow.png
+    - assets/images/animal/elephant.png
+    - assets/images/animal/ape.png
+    - assets/images/animal/horse.png
+    - assets/images/animal/whale.png
+    - assets/images/animal/pig.png
+    - assets/images/animal/sheep.png
+    - assets/images/animal/turkey.png
+    - assets/images/bird/duck.png
+    - assets/images/bird/owl.png
     - assets/videos/animal/cat.mp3
     - assets/videos/animal/cow.mp3
     - assets/videos/animal/dog.mp3
