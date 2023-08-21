@@ -6,6 +6,10 @@ const categoryData = [
     imagePath: 'assets/images/baby.jpg',
   ),
   Category(
+    title: 'Bird',
+    imagePath: 'assets/images/baby.jpg',
+  ),
+  Category(
     title: 'Human',
     imagePath: 'assets/images/baby.jpg',
   ),
