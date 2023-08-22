@@ -3,8 +3,8 @@ import 'package:crazy_sound/models/category_item.dart';
 const humanItemData = [
   CategoryItem(
     title: 'baby',
-    imageUrl: 'assets/images/human/baby.jpg',
-    audioUrl: 'assets/videos/human/baby.mp3',
+    imageUrl: 'assets/images/human/baby-scream.jpg',
+    audioUrl: 'assets/videos/human/baby-scream.mp3',
   ),
   CategoryItem(
     title: 'man',

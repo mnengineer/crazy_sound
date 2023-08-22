@@ -128,7 +128,7 @@ flutter:
     - assets/images/bird/penguin-2.png
 
   # assets/images/human/
-    - assets/images/human/baby.jpg
+    - assets/images/human/baby-scream.jpg
     - assets/images/human/man.jpg
     - assets/images/human/old-man.jpg
     - assets/images/human/people.png
@@ -194,7 +194,7 @@ flutter:
     - assets/videos/bird/turkey.mp3
 
   # assets/videos/human/
-    - assets/videos/human/baby.mp3
+    - assets/videos/human/baby-scream.mp3
     - assets/videos/human/man.mp3
     - assets/videos/human/old-man.mp3
     - assets/videos/human/people.mp3
