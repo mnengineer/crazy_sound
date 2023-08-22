@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:strange_sounds/custom_drawer/drawer_user_controller.dart';
-import 'package:strange_sounds/custom_drawer/home_drawer.dart';
-import 'package:strange_sounds/screens/category/category_home.dart';
-import 'package:strange_sounds/screens/drawer/about.dart';
-import 'package:strange_sounds/screens/drawer/review.dart';
-import 'package:strange_sounds/screens/drawer/share.dart';
+import 'package:crazy_sound/custom_drawer/drawer_user_controller.dart';
+import 'package:crazy_sound/custom_drawer/home_drawer.dart';
+import 'package:crazy_sound/screens/category/category_home.dart';
+import 'package:crazy_sound/screens/drawer/about.dart';
+import 'package:crazy_sound/screens/drawer/review.dart';
+import 'package:crazy_sound/screens/drawer/share.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

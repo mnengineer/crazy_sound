@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "259930456506",
-    "project_id": "strange-sound",
-    "storage_bucket": "strange-sound.appspot.com"
+    "project_id": "crazy-sound",
+    "storage_bucket": "crazy-sound.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:259930456506:android:f14095d67eb8cba84bdd83",
         "android_client_info": {
-          "package_name": "com.example.strange_sounds"
+          "package_name": "com.example.crazy_sound"
         }
       },
       "oauth_client": [
@@ -34,7 +34,7 @@
               "client_id": "259930456506-av1io3c71ajdq8gheh6hbfc6l4uj8vof.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.strangeSounds"
+                "bundle_id": "com.example.crazySounds"
               }
             }
           ]
