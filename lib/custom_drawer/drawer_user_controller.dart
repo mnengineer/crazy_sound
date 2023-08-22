@@ -1,4 +1,4 @@
-import 'package:strange_sounds/custom_drawer/home_drawer.dart';
+import 'package:crazy_sound/custom_drawer/home_drawer.dart';
 import 'package:flutter/material.dart';
 
 class DrawerUserController extends StatefulWidget {

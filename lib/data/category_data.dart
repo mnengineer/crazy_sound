@@ -1,4 +1,4 @@
-import 'package:strange_sounds/models/category.dart';
+import 'package:crazy_sound/models/category.dart';
 
 const categoryData = [
   Category(

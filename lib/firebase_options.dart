@@ -47,9 +47,9 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyBvr4xVuxbmbnzI-u7bVwwMg-p5f5QvihE',
     appId: '1:259930456506:web:cc7b6d93d128cd5f4bdd83',
     messagingSenderId: '259930456506',
-    projectId: 'strange-sound',
-    authDomain: 'strange-sound.firebaseapp.com',
-    storageBucket: 'strange-sound.appspot.com',
+    projectId: 'crazy-sound',
+    authDomain: 'crazy-sound.firebaseapp.com',
+    storageBucket: 'crazy-sound.appspot.com',
     measurementId: 'G-VWWMECKCYX',
   );
 
@@ -57,27 +57,29 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyD-bBaXAIaCPbqY28KQnkCY7mXfzoeOvAI',
     appId: '1:259930456506:android:f14095d67eb8cba84bdd83',
     messagingSenderId: '259930456506',
-    projectId: 'strange-sound',
-    storageBucket: 'strange-sound.appspot.com',
+    projectId: 'crazy-sound',
+    storageBucket: 'crazy-sound.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCVeQ9kJs2azx0TZ9ocVXjpTkOvAr0DTlY',
     appId: '1:259930456506:ios:522d6235e5b98cc24bdd83',
     messagingSenderId: '259930456506',
-    projectId: 'strange-sound',
-    storageBucket: 'strange-sound.appspot.com',
-    iosClientId: '259930456506-av1io3c71ajdq8gheh6hbfc6l4uj8vof.apps.googleusercontent.com',
-    iosBundleId: 'com.example.strangeSounds',
+    projectId: 'crazy-sound',
+    storageBucket: 'crazy-sound.appspot.com',
+    iosClientId:
+        '259930456506-av1io3c71ajdq8gheh6hbfc6l4uj8vof.apps.googleusercontent.com',
+    iosBundleId: 'com.example.crazySounds',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyCVeQ9kJs2azx0TZ9ocVXjpTkOvAr0DTlY',
     appId: '1:259930456506:ios:522d6235e5b98cc24bdd83',
     messagingSenderId: '259930456506',
-    projectId: 'strange-sound',
-    storageBucket: 'strange-sound.appspot.com',
-    iosClientId: '259930456506-av1io3c71ajdq8gheh6hbfc6l4uj8vof.apps.googleusercontent.com',
-    iosBundleId: 'com.example.strangeSounds',
+    projectId: 'crazy-sound',
+    storageBucket: 'crazy-sound.appspot.com',
+    iosClientId:
+        '259930456506-av1io3c71ajdq8gheh6hbfc6l4uj8vof.apps.googleusercontent.com',
+    iosBundleId: 'com.example.crazySounds',
   );
 }

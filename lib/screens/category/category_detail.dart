@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:strange_sounds/data/animal_item_data.dart';
-import 'package:strange_sounds/data/bird_item_data.dart';
-import 'package:strange_sounds/data/human_item_data.dart';
-import 'package:strange_sounds/data/other_item_data.dart';
-import 'package:strange_sounds/models/category_item.dart';
+import 'package:crazy_sound/data/animal_item_data.dart';
+import 'package:crazy_sound/data/bird_item_data.dart';
+import 'package:crazy_sound/data/human_item_data.dart';
+import 'package:crazy_sound/data/other_item_data.dart';
+import 'package:crazy_sound/models/category_item.dart';
 
 class CategoryDetailScreen extends StatefulWidget {
   const CategoryDetailScreen({super.key, required this.title});

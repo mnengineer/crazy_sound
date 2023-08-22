@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:strange_sounds/data/category_data.dart';
-import 'package:strange_sounds/screens/category/category_detail.dart';
-import 'package:strange_sounds/widgets/category_home_item.dart';
+import 'package:crazy_sound/data/category_data.dart';
+import 'package:crazy_sound/screens/category/category_detail.dart';
+import 'package:crazy_sound/widgets/category_home_item.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CategoryHomeScreen extends StatefulWidget {
