@@ -3,7 +3,7 @@ import 'package:crazy_sound/models/category.dart';
 const categoryData = [
   Category(
     title: 'Human',
-    imagePath: 'assets/images/human/baby.jpg',
+    imagePath: 'assets/images/human/baby-scream.jpg',
   ),
   Category(
     title: 'Animal',
