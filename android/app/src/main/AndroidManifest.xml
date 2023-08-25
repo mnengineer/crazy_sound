@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.crazy_sound">
+    package="com.masashi.crazy_sound">
    <application
         android:label="Crazy Sound"
         android:name="${applicationName}"
