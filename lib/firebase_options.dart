@@ -69,7 +69,7 @@ class DefaultFirebaseOptions {
     storageBucket: 'crazy-sound.appspot.com',
     iosClientId:
         '259930456506-av1io3c71ajdq8gheh6hbfc6l4uj8vof.apps.googleusercontent.com',
-    iosBundleId: 'com.example.crazySounds',
+    iosBundleId: 'com.masashi.crazy_sound',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -80,6 +80,6 @@ class DefaultFirebaseOptions {
     storageBucket: 'crazy-sound.appspot.com',
     iosClientId:
         '259930456506-av1io3c71ajdq8gheh6hbfc6l4uj8vof.apps.googleusercontent.com',
-    iosBundleId: 'com.example.crazySounds',
+    iosBundleId: 'com.masashi.crazy_sound',
   );
 }
