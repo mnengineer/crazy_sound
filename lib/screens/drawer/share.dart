@@ -39,7 +39,9 @@ class ShareScreen extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               ElevatedButton(
-                onPressed: () => _share('Crazy Sound'),
+                onPressed: () => _share(
+                  'https://apps.apple.com/jp/app/crazy-sound/id6462979201',
+                ),
                 child: Text(
                   AppLocalizations.of(context).share_button,
                 ),
