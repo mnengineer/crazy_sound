@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
           break;
         case DrawerIndex.share:
           setState(() {
-            screenView = const ShareScreen();
+            screenView = ShareScreen();
           });
           break;
         case DrawerIndex.review:
