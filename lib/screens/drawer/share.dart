@@ -1,11 +1,16 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ShareScreen extends StatelessWidget {
-  const ShareScreen({Key? key}) : super(key: key);
+  ShareScreen({Key? key}) : super(key: key);
 
   void _share(String text) => Share.share(text);
+  final String content = Platform.isIOS
+      ? "「Crazy Sound」\nLet's enjoy sounds!\nhttps://apps.apple.com/jp/app/crazy-sound/id6462979201"
+      : "「Crazy Sound」\nLet's enjoy sounds!\nhttps://apps.apple.com/jp/app/crazy-sound/id6462979201";
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +44,9 @@ class ShareScreen extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               ElevatedButton(
-                onPressed: () => _share('Crazy Sound'),
+                onPressed: () => _share(
+                  content,
+                ),
                 child: Text(
                   AppLocalizations.of(context).share_button,
                 ),
