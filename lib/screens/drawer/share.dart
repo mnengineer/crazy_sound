@@ -9,8 +9,8 @@ class ShareScreen extends StatelessWidget {
 
   void _share(String text) => Share.share(text);
   final String content = Platform.isIOS
-      ? "「Crazy Sound」\nLet's enjoy sounds!\n\nhttps://apps.apple.com/jp/app/crazy-sound/id6462979201"
-      : "「Crazy Sound」\nLet's enjoy sounds!\n\nhttps://apps.apple.com/jp/app/crazy-sound/id6462979201";
+      ? "「Crazy Sound」Let's enjoy sounds!\n\nhttps://apps.apple.com/jp/app/crazy-sound/id6462979201"
+      : "「Crazy Sound」Let's enjoy sounds!\n\nhttps://apps.apple.com/jp/app/crazy-sound/id6462979201";
 
   @override
   Widget build(BuildContext context) {
