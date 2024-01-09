@@ -1,3 +1,5 @@
+<img src="https://github.com/mnengineer/crazy_sound/assets/126535934/03e6324c-d5cd-4bcc-bcc9-2c37de781236" width="200">
+
 # Crazy Sound
 *This app is designed to enjoy unique sounds and rare animal cries🐶*
 
