@@ -1,7 +1,7 @@
 # Crazy Sound
 *This app is designed to enjoy unique sounds and rare animal cries🐶*
 
-*As an output of my first month learning Flutter, this application was successfully implemented and released within approximately one week. Please note that the code may not be fully refined, as it has not yet undergone refactoring.*
+*As an output of my first month learning Flutter, this application was successfully implemented and released within approximately one week.*
 <br>
 
 ## 📦 Download
@@ -12,3 +12,7 @@
 
 ## 📝 Article
 Zenn : [【Flutter】1週間で個人開発アプリをリリースした話](https://zenn.dev/masashiii/articles/85ad36db7f7eeb)
+
+## ⚠️ Note
+Please note that the code may not be fully refined, as it has not yet undergone refactoring.
+  
