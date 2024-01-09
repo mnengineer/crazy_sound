@@ -1,10 +1,10 @@
+<img src="https://github.com/mnengineer/crazy_sound/assets/126535934/03e6324c-d5cd-4bcc-bcc9-2c37de781236" width="200">
+
 # Crazy Sound
-*This app is designed to enjoy unique sounds and rare animal cries🐶*
+*This app is designed to enjoy unique sounds and rare animal cries!!*
 
 *As an output of my first month learning Flutter, this application was successfully implemented and released within approximately one week.*
 <br>
-
-<img src="https://github.com/mnengineer/crazy_sound/assets/126535934/03e6324c-d5cd-4bcc-bcc9-2c37de781236" width="200">
 
 ## 📦 Download
 <a href='https://apps.apple.com/jp/app/crazy-sound/id6462979201?l=en-US'><img alt='Download on the App Store' src='https://github.com/mnengineer/roadmap/assets/126535934/823b92be-2ecf-4aad-868d-ae63c7f04d72' height=80 width=240/></a>
