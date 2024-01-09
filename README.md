@@ -12,6 +12,10 @@
 
 <img src="https://github.com/mnengineer/crazy_sound/assets/126535934/58655bcf-e046-42c0-bdff-64760d90e078" width="186">  <img src="https://github.com/mnengineer/crazy_sound/assets/126535934/79cc0ea2-69aa-479a-8fc8-dfe14f1690a0" width="186">  <img src="https://github.com/mnengineer/crazy_sound/assets/126535934/4301cad0-98ed-40e0-b064-b1a106686003" width="186">  <img src="https://github.com/mnengineer/crazy_sound/assets/126535934/55bd1a3a-a085-4d74-adbf-ddd57014309e" width="186">
 
+<img src="https://github.com/mnengineer/crazy_sound/assets/126535934/913d2d89-02db-43ce-95d6-02b60c47ced6">
+
+
+
 ## 📝 Article
 Zenn : [【Flutter】1週間で個人開発アプリをリリースした話](https://zenn.dev/masashiii/articles/85ad36db7f7eeb)
 
