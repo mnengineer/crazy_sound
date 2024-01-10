@@ -16,7 +16,7 @@
 
 
 
-## 📝 Article
+## 💜 Article
 Zenn : [【Flutter】1週間で個人開発アプリをリリースした話](https://zenn.dev/masashiii/articles/85ad36db7f7eeb)
 
 ## ⚠️ Note
