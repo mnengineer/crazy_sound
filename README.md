@@ -14,7 +14,22 @@
 
 <img src="https://github.com/mnengineer/crazy_sound/assets/126535934/913d2d89-02db-43ce-95d6-02b60c47ced6">
 
+## 👀 Preview
 
+Home Screen|Light Mode
+--|--
+<img src="https://github.com/user-attachments/assets/e8c291e7-b0b6-4c85-9e92-ffbc7b88333f" width="270">|<img src="https://github.com/user-attachments/assets/2c41d15f-e5f8-4560-b6f4-2d9ca09d3f71" width="270">
+
+Home Screen|Dark Mode
+--|--
+<img src="https://github.com/user-attachments/assets/5f45112d-a7a2-4c75-84a1-2d472d03b72f" width="270">|<img src="https://github.com/user-attachments/assets/cb02f749-a7ae-4eba-b2d5-b7df283e49a7" width="270">
+
+## 🚀 Demo
+<table>
+  <tr>
+    <td><a href="https://github.com/user-attachments/assets/dc9bcf90-ba0c-4530-b632-6ccbfe1802da" target="_blank">Demo</a></td>
+  </tr>
+</table>
 
 ## 💜 Article
 Zenn : [【Flutter】1週間で個人開発アプリをリリースした話](https://zenn.dev/masashiii/articles/85ad36db7f7eeb)
